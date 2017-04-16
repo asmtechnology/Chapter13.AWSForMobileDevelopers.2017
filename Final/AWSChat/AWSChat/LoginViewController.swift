@@ -45,6 +45,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func onLogin(_ sender: Any) {
         
+        dismissKeyboard()
+        
         guard let username = self.usernameField.text,
             let password = self.passwordField.text  else {
             return

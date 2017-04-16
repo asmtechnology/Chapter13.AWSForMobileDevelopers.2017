@@ -11,13 +11,13 @@ import AWSDynamoDB
 
 class Message : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
-    var id: String?
     var chat_id:String?
+    var date_sent:NSNumber?
+    var message_id: String?
     var message_text:String?
     var message_image:String?
     var mesage_image_preview:String?
     var sender_id:String?
-    var date_sent:String?
 
     override init() {
         super.init()
@@ -25,13 +25,13 @@ class Message : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     override init(dictionary dictionaryValue: [AnyHashable : Any]!, error: ()) throws {
         super.init()
-        id = dictionaryValue["id"] as? String
         chat_id = dictionaryValue["chat_id"] as? String
+        date_sent = dictionaryValue["date_sent"] as? NSNumber
+        message_id = dictionaryValue["message_id"] as? String
         message_text = dictionaryValue["message_text"] as? String
         message_image = dictionaryValue["message_image"] as? String
         mesage_image_preview = dictionaryValue["mesage_image_preview"] as? String
         sender_id = dictionaryValue["sender_id"] as? String
-        date_sent = dictionaryValue["date_sent"] as? String
     }
 
     required init!(coder: NSCoder!) {
@@ -43,7 +43,11 @@ class Message : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     }
     
     class func hashKeyAttribute() -> String {
-        return "id"
+        return "chat_id"
+    }
+    
+    class func rangeKeyAttribute() -> String {
+        return "date_sent"
     }
     
 }

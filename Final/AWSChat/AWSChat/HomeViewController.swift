@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    fileprivate var selectedUserId:String?
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -92,6 +94,20 @@ class HomeViewController: UIViewController {
         }
     }
     
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier?.compare("chatSegue") != .orderedSame {
+            return
+        }
+        
+        let cognitoIdentityPoolController = CognitoIdentityPoolController.sharedInstance
+        
+        if let destinationViewController = segue.destination as? ChatViewController {
+            destinationViewController.from_userId = cognitoIdentityPoolController.currentIdentityID
+            destinationViewController.to_userId = self.selectedUserId
+        }
+    }
+    
 }
 
 extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
@@ -124,7 +140,16 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        
+        let chatManager = ChatManager.sharedInstance
+        
+        if let friendList = chatManager.friendList {
+            let user = friendList[indexPath.row]
+            self.selectedUserId = user.id
+        }
+    
+        
+        self.performSegue(withIdentifier: "chatSegue", sender: nil)
     }
     
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91004C101EA354E6000772E7 /* S3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91004C0F1EA354E6000772E7 /* S3Controller.swift */; };
 		9122B0301E6E98070024AE10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122B02F1E6E98070024AE10 /* AppDelegate.swift */; };
 		9122B0351E6E98070024AE10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9122B0331E6E98070024AE10 /* Main.storyboard */; };
 		9122B0371E6E98070024AE10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9122B0361E6E98070024AE10 /* Assets.xcassets */; };
@@ -35,6 +36,14 @@
 		91B2DA3C1E8AEB7C00FCFD3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91B2DA3B1E8AEB7C00FCFD3A /* GoogleService-Info.plist */; };
 		91C5D4361E844B2200DAFD11 /* CognitoIdentityPoolController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5D4351E844B2200DAFD11 /* CognitoIdentityPoolController.swift */; };
 		91C5D4381E8465FD00DAFD11 /* SocialIdentityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5D4371E8465FD00DAFD11 /* SocialIdentityManager.swift */; };
+		91D569801E9F918F0046E158 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D5697F1E9F918F0046E158 /* AWSS3.framework */; };
+		91D569811E9F918F0046E158 /* AWSS3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91D5697F1E9F918F0046E158 /* AWSS3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91D569831E9F92F20046E158 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D569821E9F92F20046E158 /* ChatViewController.swift */; };
+		91D569851E9FAA710046E158 /* UploadImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D569841E9FAA710046E158 /* UploadImageViewController.swift */; };
+		91D569871EA0C3C80046E158 /* SentTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D569861EA0C3C80046E158 /* SentTextTableViewCell.swift */; };
+		91D569891EA0C3DE0046E158 /* ReceivedTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D569881EA0C3DE0046E158 /* ReceivedTextTableViewCell.swift */; };
+		91D5698B1EA0C3EB0046E158 /* SentImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5698A1EA0C3EB0046E158 /* SentImageTableViewCell.swift */; };
+		91D5698D1EA0C3FB0046E158 /* ReceivedImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5698C1EA0C3FB0046E158 /* ReceivedImageTableViewCell.swift */; };
 		91D593601E9964EE0094160B /* DynamoDBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5935F1E9964EE0094160B /* DynamoDBController.swift */; };
 		91D593631E9A6B800094160B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D593621E9A6B800094160B /* User.swift */; };
 		91D593651E9A6B8B0094160B /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D593641E9A6B8B0094160B /* Friend.swift */; };
@@ -58,6 +67,7 @@
 				9122B0511E6F43130024AE10 /* AWSCognitoIdentityProvider.framework in Embed Frameworks */,
 				91D593721E9A8F940094160B /* AWSDynamoDB.framework in Embed Frameworks */,
 				9122B0531E6F43130024AE10 /* AWSCore.framework in Embed Frameworks */,
+				91D569811E9F918F0046E158 /* AWSS3.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +75,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		91004C0F1EA354E6000772E7 /* S3Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3Controller.swift; sourceTree = "<group>"; };
 		9122B02C1E6E98070024AE10 /* AWSChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9122B02F1E6E98070024AE10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9122B0341E6E98070024AE10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,6 +104,14 @@
 		91B2DA3B1E8AEB7C00FCFD3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		91C5D4351E844B2200DAFD11 /* CognitoIdentityPoolController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoIdentityPoolController.swift; sourceTree = "<group>"; };
 		91C5D4371E8465FD00DAFD11 /* SocialIdentityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialIdentityManager.swift; sourceTree = "<group>"; };
+		91D5697D1E9F91630046E158 /* AWSSES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSES.framework; path = Carthage/Build/iOS/AWSSES.framework; sourceTree = "<group>"; };
+		91D5697F1E9F918F0046E158 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = Carthage/Build/iOS/AWSS3.framework; sourceTree = "<group>"; };
+		91D569821E9F92F20046E158 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		91D569841E9FAA710046E158 /* UploadImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImageViewController.swift; sourceTree = "<group>"; };
+		91D569861EA0C3C80046E158 /* SentTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentTextTableViewCell.swift; sourceTree = "<group>"; };
+		91D569881EA0C3DE0046E158 /* ReceivedTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedTextTableViewCell.swift; sourceTree = "<group>"; };
+		91D5698A1EA0C3EB0046E158 /* SentImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentImageTableViewCell.swift; sourceTree = "<group>"; };
+		91D5698C1EA0C3FB0046E158 /* ReceivedImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedImageTableViewCell.swift; sourceTree = "<group>"; };
 		91D5935F1E9964EE0094160B /* DynamoDBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoDBController.swift; sourceTree = "<group>"; };
 		91D593621E9A6B800094160B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		91D593641E9A6B8B0094160B /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
@@ -119,6 +138,7 @@
 				9122B0501E6F43130024AE10 /* AWSCognitoIdentityProvider.framework in Frameworks */,
 				91B2DA311E8A3C2500FCFD3A /* GoogleAppUtilities.framework in Frameworks */,
 				9122B0521E6F43130024AE10 /* AWSCore.framework in Frameworks */,
+				91D569801E9F918F0046E158 /* AWSS3.framework in Frameworks */,
 				91B2DA341E8A3C2500FCFD3A /* GoogleSignInDependencies.framework in Frameworks */,
 				9135A4E61E81AE9500374DAE /* Bolts.framework in Frameworks */,
 				91B2DA331E8A3C2500FCFD3A /* GoogleSignIn.framework in Frameworks */,
@@ -131,6 +151,7 @@
 		9122B0231E6E98070024AE10 = {
 			isa = PBXGroup;
 			children = (
+				91D5697F1E9F918F0046E158 /* AWSS3.framework */,
 				91D593701E9A8F940094160B /* AWSDynamoDB.framework */,
 				91B2DA2B1E8A3B7A00FCFD3A /* GoogleSDK */,
 				91B2DA2A1E8A3B2D00FCFD3A /* FacebookSDK */,
@@ -155,6 +176,7 @@
 				91B2DA3B1E8AEB7C00FCFD3A /* GoogleService-Info.plist */,
 				9122B0741E7842170024AE10 /* Controller */,
 				9122B04A1E6E98D30024AE10 /* ViewControllers */,
+				91D5698E1EA0C4030046E158 /* TableViewCells */,
 				9122B0491E6E98C20024AE10 /* Storyboards */,
 				9122B02F1E6E98070024AE10 /* AppDelegate.swift */,
 				9122B0361E6E98070024AE10 /* Assets.xcassets */,
@@ -180,8 +202,9 @@
 				9122B0411E6E98300024AE10 /* LoginViewController.swift */,
 				9122B0431E6E98470024AE10 /* SignupViewController.swift */,
 				9122B0451E6E986C0024AE10 /* HomeViewController.swift */,
-				91D5936C1E9A75960094160B /* FriendTableViewCell.swift */,
 				91D593731E9BE7A30094160B /* AddFriendViewController.swift */,
+				91D569821E9F92F20046E158 /* ChatViewController.swift */,
+				91D569841E9FAA710046E158 /* UploadImageViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -194,6 +217,7 @@
 				91C5D4371E8465FD00DAFD11 /* SocialIdentityManager.swift */,
 				91D5935F1E9964EE0094160B /* DynamoDBController.swift */,
 				91D5936E1E9A7A1E0094160B /* ChatManager.swift */,
+				91004C0F1EA354E6000772E7 /* S3Controller.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -226,10 +250,23 @@
 		91B2DA361E8A3CE600FCFD3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91D5697D1E9F91630046E158 /* AWSSES.framework */,
 				91B2DA391E8A3CED00FCFD3A /* SystemConfiguration.framework */,
 				91B2DA371E8A3CE700FCFD3A /* SafariServices.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91D5698E1EA0C4030046E158 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				91D5936C1E9A75960094160B /* FriendTableViewCell.swift */,
+				91D569861EA0C3C80046E158 /* SentTextTableViewCell.swift */,
+				91D569881EA0C3DE0046E158 /* ReceivedTextTableViewCell.swift */,
+				91D5698A1EA0C3EB0046E158 /* SentImageTableViewCell.swift */,
+				91D5698C1EA0C3FB0046E158 /* ReceivedImageTableViewCell.swift */,
+			);
+			name = TableViewCells;
 			sourceTree = "<group>";
 		};
 		91D593611E9A6B670094160B /* Model */ = {
@@ -277,7 +314,8 @@
 				TargetAttributes = {
 					9122B02B1E6E98070024AE10 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = R53MV2MVHS;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -338,18 +376,25 @@
 			files = (
 				9122B0441E6E98470024AE10 /* SignupViewController.swift in Sources */,
 				91C5D4381E8465FD00DAFD11 /* SocialIdentityManager.swift in Sources */,
+				91D569831E9F92F20046E158 /* ChatViewController.swift in Sources */,
+				91D5698B1EA0C3EB0046E158 /* SentImageTableViewCell.swift in Sources */,
 				9122B0421E6E98300024AE10 /* LoginViewController.swift in Sources */,
 				9122B0301E6E98070024AE10 /* AppDelegate.swift in Sources */,
 				91C5D4361E844B2200DAFD11 /* CognitoIdentityPoolController.swift in Sources */,
 				91D593631E9A6B800094160B /* User.swift in Sources */,
 				91D593671E9A6BA50094160B /* Chat.swift in Sources */,
+				91D569891EA0C3DE0046E158 /* ReceivedTextTableViewCell.swift in Sources */,
 				91D5936D1E9A75960094160B /* FriendTableViewCell.swift in Sources */,
+				91004C101EA354E6000772E7 /* S3Controller.swift in Sources */,
 				91D593601E9964EE0094160B /* DynamoDBController.swift in Sources */,
+				91D5698D1EA0C3FB0046E158 /* ReceivedImageTableViewCell.swift in Sources */,
+				91D569851E9FAA710046E158 /* UploadImageViewController.swift in Sources */,
 				91D593651E9A6B8B0094160B /* Friend.swift in Sources */,
 				91D5936B1E9A6BCB0094160B /* Message.swift in Sources */,
 				91D5936F1E9A7A1E0094160B /* ChatManager.swift in Sources */,
 				91D593741E9BE7A30094160B /* AddFriendViewController.swift in Sources */,
 				9122B0761E7842510024AE10 /* CognitoUserPoolController.swift in Sources */,
+				91D569871EA0C3C80046E158 /* SentTextTableViewCell.swift in Sources */,
 				9122B0461E6E986C0024AE10 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R53MV2MVHS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -483,6 +529,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.asmtechnology.AWSChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7b8e9265-2a6f-414b-a882-966c19439132";
+				PROVISIONING_PROFILE_SPECIFIER = "Development Provisioning Profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AWSChat/ObjCBridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -492,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
